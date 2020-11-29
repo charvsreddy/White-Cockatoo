@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+
+#buttonScroll {
+  margin: auto;
+}
+
+.top_header {
+  overflow: hidden;
+  position: fixed;
+}
+
+#timeline {
+  margin-top: 350px;
+  overflow: auto;
+}
+
+.container {
+  backround: #DADADA;
+}
+.container header {
+  background-color: #DADADA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 50px;
+}
+.container header .logo {
+  width: 10px;
+}
+.container header nav {
+  justify-self: end;
+}
+.container header nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+.container header nav ul li {
+  display: inline;
+}
+.container header nav ul li a {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+section button {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.5rem 1.5rem;
+  background-color: #009ac9;
+  border: 1px solid transparent;
+  color: #ffffff;
+  -webkit-border-radius: 3px;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+section button:hover {
+  background-color: #FD494A;
+}
+
+#buttonScroll button {
+  background-color: #a9a9a9;
+  padding: 0.5rem 1.93rem;
+}
+
+#buttonScroll button:hover {
+  background-color: gray;
+}
+
+.btn {
+  background: black;
+  padding: 15px 60px 15px 30px;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1em;
+  clip-path: polygon(0 0, 100% 0, 79% 100%, 0% 100%);
+}
+section {
+  padding: 0.5em;
+}
+section h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+section p {
+  font-size: 1.3em;
+  margin: 0 0 2em 0;
+}
+section .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+}
+section .gallery figure {
+  margin: 3px;
+  overflow: hidden;
+  position: relative;
+  background-color: #FD494A;
+  transition: background-color 0.5s;
+}
+section .gallery figure img {
+  width: calc(100% + 60px);
+  opacity: 0.7;
+  transform: translate3d(0, -20px, 0) scale(1.12);
+  transition: all 0.5s;
+}
+section .gallery figure figcaption {
+  position: absolute;
+  padding: 1em 2em;
+  top: 0;
+  color: white;
+  text-align: center;
+}
+section .gallery figure figcaption h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: black;
+  display: inline-block;
+  padding: 0.2em 0.2em;
+}
+section .gallery figure figcaption .additional p {
+  font-size: 15px;
+
+}
+section .gallery figure figcaption .additional a {
+  display: inline-block;
+  background: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: bold;
+  color: black;
+  border-radius: 4px;
+}
+section .gallery figure figcaption .additional a:last-child {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  margin-left: 5px;
+}
+
+section .gallery figure .additional {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+section .gallery figure:hover {
+  background: black;
+}
+section .gallery figure:first-child {
+  margin-left: 0;
+}
+
+section .gallery figure:hover h3 {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 0;
+}
+
+section .gallery figure:hover img {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 0.4;
+}
+section .gallery figure:hover .additional {
+  opacity: 1;
+  transform: scale(1);
+}
+section .gallery figure:hover figcaption::before {
+  transform: rotateZ(-45deg) translate3d(0, 0, 0);
+}
+
+h1 {
+  color: #ff0000;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+div#layout {
+  text-align: center;
+}
+
+div#timelinecontainer {
+  width: 13090px;
+  height: 450px;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: -25px;
+  background-color: #f4f4f4;
+  overflow-x: scroll;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: #ff0000;
+}
+
+text {
+  font-size: 12px;
+  fill: #000000;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: darkgray;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.xlabel {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+text.source {
+  font-size: 10px;
+}
+
+.gbar text {
+  opacity: 0;
+}
+
+.gbar rect {
+  opacity: 0.6;
+}
+
+.gbar:hover rect {
+  opacity: 1;
+}
+
+.gbar text.language {
+  fill: black;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.1;
+}
+
+.gbar:hover text {
+  fill: black;
+  font-weight: 700;
+  opacity: 1;
+}
